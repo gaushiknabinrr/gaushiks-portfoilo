@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Gaushik Nabin RR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+        nav {
+            background: #1f2937;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #2563eb;
+        }
+        nav a.active {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .cert-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+        .cert-header {
+            background: linear-gradient(135deg, #1f2937, #2563eb);
+            color: white;
+            padding: 1.5rem;
+        }
+        .cert-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .cert-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        .cert-type {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #1f2937;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .view-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+            text-align: center;
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .view-btn:hover {
+            background: #1e40af;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1f2937;
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 1rem;
+            }
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="certificate.html" class="active">Certificates</a>
+        <a href="internships.html">Internships</a>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>My Certifications</h1>
+        
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Programming in Java</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">NPTEL</span>
+                    <p><strong>Score:</strong> 54%</p>
+                    <p><strong>Duration:</strong> 12 weeks</p>
+                    <p><strong>Issued:</strong> Jul-Oct 2024</p>
+                    <a href="Gaushik_NPTEL_Java.pdf" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>ReactJS for Beginners</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">SOLOLEARN</span>
+                    <p><strong>Certificate Code:</strong> 9861328</p>
+                    <p><strong>Issued:</strong> 18th February 2026</p>
+                    <a href="Gaushik_ReactJS_Sololearn.pdf" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Quantum Experience</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">PECTEAM-2024</span>
+                    <p><strong>Event:</strong> 7th International Conference</p>
+                    <p><strong>Date:</strong> 22nd & 23rd March, 2024</p>
+                    <a href="Gaushik_PECTEAM_2024_Project.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Quantum Cyber Security</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">TECHTROVE'24</span>
+                    <p><strong>Organization:</strong> SIMATS Engineering</p>
+                    <p><strong>Date:</strong> 14th February 2024</p>
+                    <a href="Gaushik_Techtrove_2024_SIMATS.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Java Assessment</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">CAREER NINJA</span>
+                    <p><strong>Certificate ID:</strong> DJA-B-1-77136-0</p>
+                    <p><strong>Date:</strong> May 24, 2024</p>
+                    <a href="Gaushik_Java_Assessment_CareerNinja_2024.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Data Analytics with AI</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">SOLOLEARN</span>
+                    <p><strong>Certificate Code:</strong> CC-G4TZAVXA</p>
+                    <p><strong>Issued:</strong> 17th February, 2026</p>
+                    <a href="Data Analytics with AI Certificate.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-header">
+                    <h3>Cybersecurity Analysis & Design</h3>
+                </div>
+                <div class="cert-body">
+                    <span class="cert-type">NASSCOM</span>
+                    <p><strong>Certification ID:</strong> FSP/2024/6/10175844</p>
+                    <p><strong>Category:</strong> Gold (>70%)</p>
+                    <p><strong>Date:</strong> June 27, 2024</p>
+                    <a href="Gaushik_Nabin_RR_Cybersecurity_Analysis_Design_Certificate.pdf" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2026 Gaushik Nabin RR | Certifications Portfolio
+    </footer>
+</body>
+</html>

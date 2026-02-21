@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | Gaushik Nabin RR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #333;
+        }
+        nav {
+            background: #1f2937;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #2563eb;
+        }
+        nav a.active {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1f2937;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .internship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .internship-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .internship-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+        }
+        .card-header {
+            background: linear-gradient(135deg, #1f2937, #2563eb);
+            color: white;
+            padding: 1.5rem;
+        }
+        .card-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .card-header .company {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .card-body {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+        .duration {
+            display: inline-block;
+            background: #e2e8f0;
+            color: #1f2937;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .details {
+            list-style-position: inside;
+            margin: 1rem 0;
+        }
+        .details li {
+            margin: 0.5rem 0;
+            color: #4a5568;
+        }
+        .view-btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s;
+            text-align: center;
+            width: 100%;
+        }
+        .view-btn:hover {
+            background: #1e40af;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background: #1f2937;
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 1rem;
+            }
+            .internship-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="certificate.html">Certificates</a>
+        <a href="internships.html" class="active">Internships</a>
+    </nav>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Internship Experience</h1>
+        
+        <div class="internship-grid">
+            <!-- iDynamics Internship -->
+            <div class="internship-card">
+                <div class="card-header">
+                    <h2>.NET Intern</h2>
+                    <div class="company">iDynamics Software Private Limited</div>
+                </div>
+                <div class="card-body">
+                    <span class="duration">December 2024</span>
+                    <ul class="details">
+                        <li>Worked in .NET development environment</li>
+                        <li>Assisted in backend debugging and issue resolution</li>
+                        <li>Collaborated with senior developers on real-time projects</li>
+                    </ul>
+                    <a href="Gaushik_iDynamics_Internship_2024.pdf" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- BSNL Internship -->
+            <div class="internship-card">
+                <div class="card-header">
+                    <h2>Telecom Intern</h2>
+                    <div class="company">BSNL (Bharat Sanchar Nigam Limited)</div>
+                </div>
+                <div class="card-body">
+                    <span class="duration">June - July 2024</span>
+                    <ul class="details">
+                        <li>Gained exposure to telecom infrastructure systems</li>
+                        <li>Observed real-time communication and networking technologies</li>
+                        <li>Learned switching and routing fundamentals</li>
+                    </ul>
+                    <a href="Gaushik_BSNL_Internship_2024.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+
+            <!-- MTL Webking Internship -->
+            <div class="internship-card">
+                <div class="card-header">
+                    <h2>Machine Learning Intern</h2>
+                    <div class="company">MTL Webking Technology Pvt. Ltd</div>
+                </div>
+                <div class="card-body">
+                    <span class="duration">May 25 - June 30, 2025</span>
+                    <ul class="details">
+                        <li>Worked on real-time Machine Learning projects</li>
+                        <li>Hands-on experience with NumPy, Pandas, Matplotlib, and Scikit-Learn</li>
+                        <li>Applied data preprocessing and model building techniques</li>
+                        <li>Developed analytical and problem-solving skills</li>
+                    </ul>
+                    <a href="Gaushik_MTL_Webking_Internship_2025.jpeg" class="view-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2026 Gaushik Nabin RR | Internship Experience
+    </footer>
+</body>
+</html>
